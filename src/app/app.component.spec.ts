@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'multi-step-form' title`, () => {
+  it(`should have the 'student-forms' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('multi-step-form');
+    expect(app.title).toEqual('student-forms');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, multi-step-form');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, student-forms');
   });
 });

@@ -1,0 +1,16 @@
+<!-- login-form.component.html -->
+<div class="form-container">
+  <h2>Login Form</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username</label>
+      <input id="username" formControlName="username" type="text" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" formControlName="password" type="password" />
+    </div>
+    <button type="submit" [@submitState]="submitState">Login</button>
+  </form>
+  <button (click)="forgotPassword()">Forgot Password?</button>
+</div>
